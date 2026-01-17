@@ -1,0 +1,9 @@
+{
+	"name": "krishna-adf-kiran",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "973d0c34-dee3-4d3e-821e-d4865e422024",
+		"tenantId": "3000bb25-a69f-447f-aeba-826f42c084c7"
+	}
+}

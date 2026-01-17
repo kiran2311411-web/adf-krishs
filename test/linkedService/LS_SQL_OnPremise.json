@@ -1,0 +1,27 @@
+{
+	"name": "LS_SQL_OnPremise",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"DB Name": {
+				"type": "string",
+				"defaultValue": "AdventureWorks2022"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-NUHFO2T\\SQLEXPRESS",
+			"database": "@{linkedService().DB Name}",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJkMzI5YjJhNS1mMjI4LTRmNjUtODIyMy1kNzY0ZTEyNDY0NTciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IR-SelfHosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
