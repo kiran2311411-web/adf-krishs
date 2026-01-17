@@ -1,0 +1,33 @@
+{
+	"name": "DS_SQL_onpremise",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_OnPremise",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DB Name": "AdventureWorks2022"
+			}
+		},
+		"parameters": {
+			"schema": {
+				"type": "string"
+			},
+			"table": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().table",
+				"type": "Expression"
+			}
+		}
+	}
+}
