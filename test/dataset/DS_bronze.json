@@ -14,6 +14,9 @@
 			},
 			"file": {
 				"type": "string"
+			},
+			"env": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
